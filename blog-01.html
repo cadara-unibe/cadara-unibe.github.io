@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teoría de Autómatas y Compiladores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<header>
+    <h2>Principales Aspectos de la Teoria de Automatas y Compiladores</h2>
+</header>
+
+<body>
+    <div class="content-container">
+        <h1>Definición de Compiladores y su Relación con la Teoría de Autómatas y Lenguajes Formales.</h1>
+
+        <h2>¿Qué es un Compilador?</h2>
+        <p>Según nos dice la página oficial para desarrolladores de Mozilla, compilar es convertir un programa informático de un lenguaje a otro formato o lenguaje. Un compilador es el programa que lleva a cabo esta conversión.</p>
+
+        <p>Generalmente, los compiladores cambian código de lenguajes de alto nivel como C++, Rust o Java a código ejecutable (código binario o código máquina). Un ejemplo es WebAssembly, que convierte código de C++, Rust, C#, Go, Swift y otros en código binario ejecutable en páginas web de cualquier navegador.</p>
+
+        <p>Los compiladores suelen realizar compilación anticipada (AOT) o en tiempo de ejecución (JIT).</p>
+
+        <p>El compilador GNU GCC es un ejemplo clásico de AOT, que se ejecuta desde la línea de comandos o un IDE. Los compiladores JIT, en cambio, se integran en entornos de ejecución para mejorar el rendimiento, como los motores JavaScript en navegadores actuales con JIT incorporados.</p>
+
+        <p>Además, los compiladores pueden convertir entre lenguajes de alto nivel, como de TypeScript a JavaScript, y en estos casos, se les llama transpiladores.</p>
+
+        <h2>¿Cuál es su relación con los autómatas y los lenguajes formales?</h2>
+
+        <p>De un artículo de la UEM se puede extraer que la relación entre los compiladores y la teoría de autómatas y lenguajes formales es fundamental y profunda. La teoría de autómatas proporciona la base teórica para el análisis y diseño de compiladores. A continuación, se detallan algunos aspectos clave de esta relación:</p>
+
+        <ol>
+            <li><strong>Análisis Léxico</strong>: En esta etapa inicial de un compilador, se utiliza un autómata finito (determinista o no determinista) para identificar y clasificar los tokens del código fuente. Los autómatas finitos son ideales para esta tarea porque pueden reconocer patrones de texto, como identificadores, operadores y palabras reservadas.</li>
+            <br/>
+            <li><strong>Análisis Sintáctico</strong>: Aquí se emplean gramáticas libres de contexto y autómatas de pila (como los autómatas de pila deterministas) para analizar la estructura del código fuente y construir un árbol sintáctico. Este proceso verifica que el código siga la sintaxis definida del lenguaje de programación.</li>
+            <br/>
+            <li><strong>Análisis Semántico</strong>: Aunque esta fase está más relacionada con la teoría de lenguajes formales que con los autómatas per se, utiliza los resultados del análisis sintáctico para verificar aspectos como la coherencia de tipos y el alcance de las variables.</li>
+            <br/>
+            <li><strong>Generación de Código Intermedio y Optimización</strong>: Las técnicas de optimización de código a menudo se basan en conceptos de la teoría de autómatas y lenguajes formales, especialmente cuando se trata de transformaciones y patrones dentro del código.</li>
+            <br/>
+            <li><strong>Teoría de Lenguajes Formales</strong>: Esta teoría proporciona el marco para entender los tipos de lenguajes que pueden ser reconocidos y procesados por diferentes tipos de autómatas. Esto es crucial para el diseño de la gramática de un lenguaje de programación y para comprender qué construcciones son posibles o imposibles de analizar y compilar.</li>
+        </ol>
+        <section class="cta-section">
+            <h2>¿Quieres seguir leyendo?</h2>
+            <a href="index.html" class="cta-button">Volver al inicio</a>
+            <a href="blog-references.html" class="cta-button">Ver Referencias</a>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+<footer>
+    <p>&copy; 2023 Universidad Iberoamericana - Todos los derechos reservados</p>
+</footer>
+
+</html>
