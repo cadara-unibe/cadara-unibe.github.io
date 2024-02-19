@@ -3,38 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Teoría de Autómatas y Compiladores</title>
+    <title>ANÁLISIS Y DISEÑO DE ALGORITMOS</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <header>
-    <h2>Principales Aspectos de la Teoria de Automatas y Compiladores</h2>
+    <h2>Principales Algoritmos en el manejo de cadenas (strings)</h2>
 </header>
 
 <body>
     <div class="content-container">
-        <h1>Código Intermedio y Final</h1>
-
-        <p>La generación de código en un compilador se realiza en dos etapas principales: la generación de código intermedio y la generación de código final (o código objeto). Cada una de estas etapas tiene un papel específico en el proceso de transformación del código fuente en código ejecutable.</p>
-    
-        <h2>Generación de Código Intermedio</h2>
+        <h1>Principales Algoritmos en el manejo de cadenas (strings)</h1>
     
         <ol>
-            <li><strong>Propósito</strong>: El código intermedio actúa como una capa intermedia entre el código fuente y el código objeto. Su propósito es abstraer las particularidades de las plataformas y arquitecturas de hardware específicas, lo que permite que un compilador sea más portátil y modular.</li><br/>
-            <li><strong>Naturaleza del Código Intermedio</strong>: Este código suele ser independiente de la máquina, situándose a un nivel más bajo que el código fuente pero más alto que el código máquina. Ejemplos comunes de representaciones intermedias incluyen el código de tres direcciones, el código de cuádruples y el código de pseudocódigo.</li><br/>
-            <li><strong>Ventajas</strong>: Facilita la optimización del código, ya que las transformaciones pueden realizarse sobre una representación más simplificada y estandarizada del programa. También permite la reutilización del front-end del compilador para diferentes plataformas de hardware, ya que solo el back-end necesita ser adaptado para generar el código máquina específico de la plataforma.</li><br/>
-            <li><strong>Proceso</strong>: El código intermedio se genera a partir del árbol de sintaxis abstracta (AST) o de la representación intermedia más detallada creada durante las fases de análisis sintáctico y semántico del compilador. En esta etapa, se traducen las estructuras de alto nivel del lenguaje fuente a operaciones más básicas.</li><br/>
-        </ol>
-    
-        <h2>Generación de Código Final (Código Objeto)</h2>
-    
-        <ol>
-            <li><strong>Propósito</strong>: La generación de código final convierte el código intermedio en código máquina, que es específico para la arquitectura de hardware objetivo. Este código es lo que finalmente se ejecuta en la computadora.</li><br/>
-            <li><strong>Aspectos Clave</strong>: Incluye la asignación de registros, la selección de instrucciones específicas de la máquina, la gestión de la memoria y la optimización de bajo nivel.</li><br/>
-            <li><strong>Optimización</strong>: En esta fase, se aplican optimizaciones específicas de la arquitectura para mejorar la eficiencia del código, como la minimización de accesos a memoria, la optimización de bucles y el uso eficiente de los registros del procesador.</li><br/>
-            <li><strong>Proceso</strong>: El código intermedio se traduce a instrucciones máquina, teniendo en cuenta las particularidades del conjunto de instrucciones del procesador y su modelo de memoria. Las técnicas de optimización se aplican para mejorar el rendimiento y la eficiencia del código generado.</li><br/>
-            <li><strong>Resultado</strong>: El resultado es un código objeto o binario que puede ser ejecutado directamente por la máquina o vinculado con otros códigos objeto y bibliotecas para formar un programa ejecutable.</li><br/>
-        </ol>
+            <li>
+              <h2>Búsqueda de Subcadenas:</h2>
+              <ul>
+                <li>Algoritmo de Fuerza Bruta: Comprueba cada posición de la cadena principal para ver si coincide con la subcadena. Es simple pero menos eficiente.</li>
+                <li>Algoritmo de Boyer-Moore: Utiliza un enfoque heurístico para buscar subcadenas de manera más eficiente que el método de fuerza bruta.</li>
+                <li>Algoritmo de Knuth-Morris-Pratt (KMP): Utiliza información sobre coincidencias anteriores para evitar volver a comparar subcadenas ya verificadas.</li>
+              </ul>
+            </li>
+            <li>
+              <h2>Comparación de Cadenas:</h2>
+              <ul>
+                <li>Algoritmo de Levenshtein: Calcula la distancia de edición entre dos cadenas, es decir, el número mínimo de operaciones requeridas para convertir una cadena en otra (insertar, eliminar o reemplazar un carácter).</li>
+                <li>Algoritmo de Ratcliff/Obershelp: Calcula una medida de similitud entre dos cadenas basada en la comparación de subsecuencias comunes.</li>
+              </ul>
+            </li>
+            <li>
+              <h2>Tokenización:</h2>
+              <ul>
+                <li>Algoritmo de División de Cadena: Divide una cadena en tokens (palabras, frases, etc.) basándose en un delimitador específico (por ejemplo, un espacio en blanco).</li>
+                <li>Algoritmo de Análisis Lexicográfico: Divide una cadena en tokens basándose en reglas gramaticales específicas (por ejemplo, en lenguajes de programación).</li>
+              </ul>
+            </li>
+            <li>
+              <h2>Manipulación de Cadenas:</h2>
+              <ul>
+                <li>Algoritmo de Reversión de Cadena: Invierte el orden de los caracteres en una cadena.</li>
+                <li>Algoritmo de Conversión de Mayúsculas y Minúsculas: Convierte todos los caracteres de una cadena a mayúsculas o minúsculas según sea necesario.</li>
+              </ul>
+            </li>
+            <li>
+              <h2>Emparejamiento de Patrones:</h2>
+              <ul>
+                <li>Algoritmo de Expresiones Regulares: Utiliza patrones de texto para encontrar coincidencias dentro de una cadena, permitiendo búsquedas más complejas y flexibles.</li>
+              </ul>
+            </li>
+          </ol>
+          
 
         <section class="cta-section">
             <h2>¿Quieres seguir leyendo?</h2>
