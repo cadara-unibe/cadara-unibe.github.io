@@ -8,55 +8,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <header>
-    <h2>Principales Aspectos de la Teoria de Automatas y Compiladores</h2>
+    <h2>Principales operaciones de manejo de cadenas.</h2>
 </header>
 
 <body>
     <div class="content-container">
-        <h1>Estructura de un Compilador</h1>
+        <h1>Las principales operaciones de manejo de cadenas incluyen:</h1>
 
-        <p>Un compilador se encarga de interpretar los significados de las diversas estructuras en la definición de un lenguaje de programación.</p>
-
-        <p>Los compiladores se dividen principalmente en dos etapas: el análisis, donde se examina la estructura y significado del código fuente, y la síntesis, donde se crea el programa objetivo.</p>
-
-        <p>Existen dos formas de organizar las fases de un compilador: front-end, que analiza el código, verifica su validez, construye el árbol de derivación y llena la tabla de símbolos; y back-end, que genera el código máquina.</p>
-
-        <h2>Análisis Léxico</h2>
-
-        <p>Esta fase implica el análisis a nivel de caracteres para identificar los componentes léxicos del código fuente, que luego se pasan al analizador sintáctico.</p>
-
-        <p>Es crucial diferenciar entre:</p>
         <ul>
-            <li>Token: un símbolo abstracto que representa una unidad léxica, como palabras reservadas, identificadores, operadores, símbolos especiales y constantes.</li>
-            <br>
-            <li>Patrón: una regla que define la secuencia de caracteres de un token.</li>
-            <br>
-            <li>Lexema: una secuencia de caracteres que coincide con un patrón de un token.</li>
-            <br>
+            <ul>
+                <li><strong>Creación:</strong> Crear una cadena implica definir una secuencia de caracteres. Por ejemplo, en muchos lenguajes de programación, puedes crear una cadena utilizando comillas simples ('') o dobles ("").</li>
+
+                <li><strong>Concatenación:</strong> La concatenación de cadenas implica unir dos o más cadenas para formar una sola cadena más larga. Por ejemplo, en muchos lenguajes, puedes concatenar cadenas utilizando el operador "+".</li>
+
+                <li><strong>Longitud:</strong> Obtener la longitud de una cadena implica determinar cuántos caracteres contiene. Esto es útil para iterar sobre una cadena o para validar su tamaño.</li>
+
+                <li><strong>Acceso a caracteres:</strong> Puedes acceder a caracteres individuales dentro de una cadena utilizando un índice. Por ejemplo, en muchos lenguajes, puedes acceder al carácter en la posición i de una cadena utilizando la notación cadena[i].</li>
+
+                <li><strong>Comparación:</strong> Comparar cadenas implica determinar si dos cadenas son iguales o diferentes. Esto es útil para ordenar cadenas o para realizar búsquedas.</li>
+
+                <li><strong>Búsqueda:</strong> Buscar una subcadena dentro de una cadena implica encontrar la posición en la que comienza la subcadena dentro de la cadena principal. Esto es útil para encontrar palabras clave o para extraer información específica de una cadena.</li>
+
+                <li><strong>Extracción:</strong> Extraer una subcadena de una cadena implica obtener una parte de la cadena original. Esto es útil para manipular partes específicas de una cadena sin modificar la original.</li>
+
+                <li><strong>Modificación:</strong> Modificar una cadena implica cambiar su contenido de alguna manera. Por ejemplo, puedes reemplazar un carácter por otro, convertir la cadena a mayúsculas o minúsculas, o eliminar ciertos caracteres.</li>
+            </ul>
+              
         </ul>
-        <p>Los tokens se identifican usando gramáticas y lenguajes regulares.</p>
 
-        <h2>Análisis Sintáctico</h2>
-
-        <p>El analizador sintáctico usa los tokens del analizador léxico para crear un árbol sintáctico que representa la estructura del programa fuente. Verifica si los tokens forman sentencias válidas en el lenguaje. Se utilizan gramáticas libres de contexto y autómatas de pila para este propósito.</p>
-
-        <p>El manejador de errores en esta fase busca identificar, localizar y recuperarse de errores sin interrumpir la compilación. Las estrategias incluyen ignorar el problema, recuperación a nivel de frase, reglas de producción adicionales y corrección global.</p>
-
-        <h2>Análisis Semántico</h2>
-
-        <p>Se trata de asignar significado a lo analizado sintácticamente. Las gramáticas atribuidas asocian atributos y reglas semánticas a cada símbolo. La tabla de símbolos registra identificadores con información relevante para el análisis semántico. Se busca detectar construcciones sintácticamente correctas pero semánticamente inválidas.</p>
-
-        <h2>Generación de Código Intermedio</h2>
-
-        <p>Esta fase convierte el programa fuente en una representación intermedia, facilitando la creación de compiladores para distintas arquitecturas y permitiendo la optimización de código independiente de la máquina.</p>
-
-        <h2>Optimización de Código Intermedio</h2>
-
-        <p>Se busca mejorar el código intermedio para generar código máquina más eficiente, mediante técnicas como eliminación de variables no usadas, desenredado de bucles, evaluación en corto circuito y precálculo de expresiones constantes.</p>
-
-        <h2>Generación y Optimización de Código Objeto</h2>
-
-        <p>La etapa final involucra traducir el código intermedio a instrucciones máquina, enfocándose en la asignación eficiente de variables a registros físicos del procesador.</p>
         <section class="cta-section">
             <h2>¿Quieres seguir leyendo?</h2>
             <a href="index.html" class="cta-button">Volver al inicio</a>
