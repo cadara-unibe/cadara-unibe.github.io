@@ -13,31 +13,38 @@
 
 <body>
     <div class="content-container">
-        <h1>Fases del Proceso de Compilación</h1>
+        <h1>Ejemplos de Programas con Manejo de Cadenas (Strings)</h1>
 
-        <p>Del texto proporcionado, las fases de un compilador se describen de la siguiente manera:</p>
-    
-        <ol>
-            <li><strong>Preprocesamiento</strong>: Esta fase involucra transformaciones al archivo fuente antes de la compilación propiamente dicha. Aquí se realizan tareas como la expansión de macros y la inclusión de otros archivos de código fuente, como se hace con las directivas <code>#include</code> en lenguajes como C.</li><br/>
-    
-            <li><strong>Análisis Léxico</strong>: En esta etapa, el compilador identifica y clasifica los elementos básicos del lenguaje, conocidos como tokens. Estos tokens incluyen palabras clave, identificadores, constantes, operadores y símbolos de puntuación.</li><br/>
-    
-            <li><strong>Análisis Sintáctico</strong>: Aquí se analiza la estructura del código fuente utilizando los tokens identificados en la fase de análisis léxico. Se verifica si la secuencia de tokens sigue las reglas sintácticas del lenguaje, construyendo generalmente un árbol sintáctico que representa la estructura jerárquica del programa.</li><br/>
-    
-            <li><strong>Análisis Semántico</strong>: Esta fase se centra en entender y comprobar la coherencia semántica del código fuente. Incluye verificar la corrección de los tipos de datos, la declaración y asignación de variables, y otros aspectos que no son puramente sintácticos pero son críticos para el significado del programa.</li><br/>
-    
-            <li><strong>Generación de Código Intermedio</strong>: El compilador transforma el programa fuente en una representación de código intermedio, que es una versión más abstracta del código máquina. Este código intermedio actúa como un puente entre el código fuente de alto nivel y el código máquina de bajo nivel.</li><br/>
-    
-            <li><strong>Optimización de Código</strong>: Durante esta etapa, se realizan mejoras a la representación intermedia del código para hacerlo más eficiente en términos de velocidad de ejecución, uso de memoria, entre otros factores.</li><br/>
-    
-            <li><strong>Generación de Código</strong>: Es la transformación del código intermedio en código máquina o código objeto, que puede ser ejecutado por la computadora.</li><br/>
-    
-            <li><strong>Depuración</strong>: Esta fase implica la identificación y corrección de errores en el programa.</li><br/>
-    
-            <li><strong>Administración de la Tabla de Símbolos</strong>: Se maneja una tabla que contiene información sobre los identificadores utilizados en el programa, incluyendo sus atributos y ubicaciones.</li><br/>
-        </ol>
-    
-        <p>Cada una de estas fases interactúa con las demás durante el proceso de compilación, aunque para fines didácticos a menudo se presentan de manera secuencial.</p>
+        <h2>Programa 1: Contar vocales en una cadena</h2>
+        <pre>
+<code class="language-python">
+def contar_vocales(cadena):
+    vocales = "aeiouAEIOU"
+    contador = 0
+    for caracter in cadena:
+        if caracter in vocales:
+            contador += 1
+    return contador
+
+cadena = "Hola, Mundo!"
+num_vocales = contar_vocales(cadena)
+print("Número de vocales en la cadena:", num_vocales)
+</code>
+</pre>
+
+        <h2>Programa 2: Reversión de una cadena</h2>
+        <pre>
+<code class="language-python">
+def revertir_cadena(cadena):
+    return cadena[::-1]
+
+cadena = "Hola, Mundo!"
+cadena_revertida = revertir_cadena(cadena)
+print("Cadena revertida:", cadena_revertida)
+</code>
+</pre>
+
+
         <section class="cta-section">
             <h2>¿Quieres seguir leyendo?</h2>
             <a href="index.html" class="cta-button">Volver al inicio</a>
